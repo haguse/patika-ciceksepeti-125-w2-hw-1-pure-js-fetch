@@ -88,7 +88,7 @@ searchInput.addEventListener("keyup", (e) => {
               <div class="card__content">              
                   <p class="card__title">${card.title}</p>
                   <p class="card__text">${card.body}</p>
-                  <button>More ....</button>
+                  <button class="card__button">More ....</button>
               </div>
             </div>
         `;
@@ -101,19 +101,19 @@ modalButton.addEventListener("click", (e) => {
   e.preventDefault();
 
   modalText.innerHTML = `
-    <p class="modal__text">${company.value}</p>
-    <p class="modal__text">${firstName.value}</p>
-    <p class="modal__text">${lastName.value}</p>
-    <p class="modal__text">${email.value}</p>
-    <p class="modal__text">${title.value}</p>
-    <p class="modal__text">${phone.value}</p>
-    <p class="modal__text">Cancel Registration -> ${cancelReg.checked}</p>
-    <p class="modal__text">${training.value}</p>
-    <p class="modal__text">${
-      jobFunction.options[jobFunction.selectedIndex].text
-    }</p>
-    <p class="modal__text">${distary.value}</p>
-    <p class="modal__text">${expectations.value}</p>
+  <p class="modal__text">Company -> ${company.value}</p>
+  <p class="modal__text">First Name -> ${firstName.value}</p>
+  <p class="modal__text">Last Name -> ${lastName.value}</p>
+  <p class="modal__text">Email Address -> ${email.value}</p>
+  <p class="modal__text">Title -> ${title.value}</p>
+  <p class="modal__text">Phone -> ${phone.value}</p>
+  <p class="modal__text">Cancel Registration -> ${cancelReg.checked}</p>
+  <p class="modal__text">Training Session -> ${training.value}</p>
+  <p class="modal__text">Job Func. -> ${
+    jobFunction.options[jobFunction.selectedIndex].text
+  }</p>
+  <p class="modal__text">Distary Reqs. -> ${distary.value}</p>
+  <p class="modal__text">Expectations -> ${expectations.value}</p>
   `;
   // Open Modal
   modal.classList.remove("d-none");
