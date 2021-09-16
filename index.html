@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>125. Bootcamp Odev 1 Halit Guven</title>
+    <link rel="stylesheet" href="reset.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <navbar class="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-jsfiddle"></i>
+        </div>
+        <div id="search" class="navbar__search">
+            <i class="fas fa-search"></i>
+            <input id="search__input" type="search">
+        </div>
+        <div class="navbar__profile">
+            <i class="fas fa-child"></i>
+        </div>
+    </navbar>
+    <!-- Navbar End -->
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <p id="cards-handler">Cards</p>
+            <p id="form-handler">Form</p>
+        </div>
+        <div class="content">
+            <!-- We will Fill Cards with JavaScript -->
+            <div id="cards" class="cards"></div>
+            <!-- Form Start -->
+            <div id="form" class="form d-none">
+                <form action="">
+                    <div class="form__row">
+                        <label for="">Company</label>
+                        <input id="company" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">First Name</label>
+                        <input id="first_name" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Last Name</label>
+                        <input id="last_name" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Email Address</label>
+                        <input id="email_address" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Title</label>
+                        <input id="title" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Phone</label>
+                        <input id="phone" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="cancel_reg">Cancel Registration</label>
+                        <input id="cancel_reg" type="checkbox">
+                    </div class="form__row">
+                    <div class="form__row">
+                        <label for="">252 Training Session 2010</label>
+                        <input id="training_session" type="datetime">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Job Function</label>
+                        <select name="" id="job_func">
+                            <option value="Campaign">Campaign Management</option>
+                            <option value="">CRM Administration</option>
+                            <option value="">Email Deployment</option>
+                            <option value="">Partner</option>
+                            <option value="">Employee</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <label for="">Distary Requirements</label>
+                        <input id="distary" type="text" name="" id="">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Expectations</label>
+                        <textarea name="" id="expectations" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="modal__button">Submit</button>
+                </form>
+            </div>
+            <!-- Form End -->
+
+            <!--  Modal Start-->
+            <div id="modal" class="modal d-none">
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <span id="modal__close" class="modal__close">&times;</span>
+                    <p class="modal__title">Results</p>
+                    <div id="modal__text__container">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
+        </div>
+    </div>
+</body>
+
+</html>
